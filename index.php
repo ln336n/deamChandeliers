@@ -20,5 +20,7 @@
 Luxury Lighting Redefined
 </div>
 
+<footer>© Dream Chandeliers</footer>
+
 </body>
 </html>
