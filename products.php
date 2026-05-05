@@ -1,6 +1,20 @@
 <?php include 'config.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <header>Our Collection</header>
+
+<nav>
+<a href="index.php">Home</a>
+<a href="products.php">Products</a>
+<a href="cart.php">Cart</a>
+<a href="about.php">About</a>
+</nav>
 
 <div class="products">
 
@@ -24,3 +38,6 @@ foreach ($products as $p) {
 ?>
 
 </div>
+
+</body>
+</html>
