@@ -16,7 +16,7 @@
 <a href="about.php">About</a>
 </nav>
 
-<?php $name = $_GET['name']; ?>
+$name = isset($_GET['name']) ? $_GET['name'] : "Unknown Product";
 
 <h2 style="text-align:center;"><?php echo $name; ?></h2>
 
