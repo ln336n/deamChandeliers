@@ -30,7 +30,7 @@ $products = [
 foreach ($products as $p) {
     echo "
     <div class='card'>
-        <img src='https://via.placeholder.com/200'>
+        <img src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c'>
         <h3>$p</h3>
         <a href='product.php?name=$p'><button>View</button></a>
     </div>";
@@ -38,6 +38,8 @@ foreach ($products as $p) {
 ?>
 
 </div>
+
+<footer>© Dream Chandeliers</footer>
 
 </body>
 </html>
