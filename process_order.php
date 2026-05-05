@@ -5,7 +5,7 @@ $card = $_POST['card'];
 $exp = $_POST['exp'];
 $cvv = $_POST['cvv'];
 
-$product = implode(",", $_SESSION['cart']);
+$product = isset($_SESSION['cart']) ? implode(",", $_SESSION['cart']) : "None";
 $user = $_SESSION['user'];
 
 if ($conn) {
