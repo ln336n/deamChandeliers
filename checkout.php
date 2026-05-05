@@ -1,13 +1,12 @@
 <?php
 include 'config.php';
 
-// Redirect to login if not logged in
+
 if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit();
 }
 
-// Product prices
 $prices = [
     "Crystal Elegance" => 1985,
     "Modern Glow" => 5999,
@@ -16,7 +15,7 @@ $prices = [
     "Luxury Halo" => 3688
 ];
 
-// Calculate total
+
 $total = 0;
 if (!empty($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $item) {
