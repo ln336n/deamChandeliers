@@ -1,8 +1,9 @@
 <?php
 session_start();
 
-$valid_username = "admin";
-$valid_password = "1234";
+
+$valid_username = "rutgersbuyer1";
+$valid_password = "chandelierbuyer1";
 
 if ($_POST['username'] === $valid_username && $_POST['password'] === $valid_password) {
     $_SESSION['user'] = $_POST['username'];
