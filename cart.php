@@ -1,6 +1,22 @@
 <?php include 'config.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<h2>Your Cart</h2>
+<header>Your Cart</header>
+
+<nav>
+<a href="index.php">Home</a>
+<a href="products.php">Products</a>
+<a href="cart.php">Cart</a>
+<a href="about.php">About</a>
+</nav>
+
+<div style="text-align:center;">
 
 <?php
 if (!empty($_SESSION['cart'])) {
@@ -8,8 +24,16 @@ if (!empty($_SESSION['cart'])) {
         echo "<p>$item</p>";
     }
 } else {
-    echo "Cart is empty.";
+    echo "<p>Cart is empty.</p>";
 }
 ?>
 
-<a href="checkout.php">Proceed to Checkout</a>
+<br>
+<a href="checkout.php"><button>Proceed to Checkout</button></a>
+
+</div>
+
+<footer>© Dream Chandeliers</footer>
+
+</body>
+</html>
