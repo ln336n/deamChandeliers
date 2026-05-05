@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
+}
+
+header {
+    background: black;
+    padding: 25px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid gold;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: gold;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/724/215/620/house-table-villa-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    min-height: 100vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a1a;
+    margin: 20px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    border: 1px solid gold;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    color: gold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-box {
+    background: #1a1a1a;
+    padding: 30px;
+    border: 1px solid gold;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid gold;
+    margin-top: 40px;
+}
