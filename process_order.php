@@ -1,8 +1,18 @@
 <?php
 session_start();
 
-// Clear cart after order
-$_SESSION['cart'] = [];
+$valid_card = "123456789";
+$valid_exp = "09/30";
+$valid_cvv = "999";
 
-echo "Order placed successfully!";
+if (
+    $_POST['card'] === $valid_card &&
+    $_POST['exp'] === $valid_exp &&
+    $_POST['cvv'] === $valid_cvv
+) {
+    $_SESSION['cart'] = [];
+    echo "Order placed successfully!";
+} else {
+    echo "Invalid payment information.";
+}
 ?>
