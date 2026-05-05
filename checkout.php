@@ -99,5 +99,3 @@ if (!empty($_SESSION['cart'])) {
 </body>
 </html>
 
-</body>
-</html>
