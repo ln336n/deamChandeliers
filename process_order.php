@@ -11,7 +11,9 @@ $user = $_SESSION['user'];
 $sql = "INSERT INTO orders (username, product, card_number)
 VALUES ('$user', '$product', '$card')";
 
-$conn->query($sql);
+if ($conn) {
+    $conn->query($sql);
+}
 
 echo "<h2>Congratulations! Your order has been placed.</h2>";
 
