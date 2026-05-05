@@ -1,7 +1,24 @@
-<h2>Login Required</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Secure Login</header>
+
+<div style="text-align:center;">
 
 <form action="process_login.php" method="post">
-    Username: <input type="text" name="username"><br>
-    Password: <input type="password" name="password"><br>
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="password" name="password" placeholder="Password"><br>
     <button type="submit">Login</button>
 </form>
+
+</div>
+
+<footer>© Dream Chandeliers</footer>
+
+</body>
+</html>
